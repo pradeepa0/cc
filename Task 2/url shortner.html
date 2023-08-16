@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<meta name="viewport" width="device-width, initial-scale=1.0">
+<title>URL SHORTNER</title>
+<style>
+    body{
+        background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    }
+.container{
+    position:relative;
+    border-radius: 5px;
+    width:60%;
+    text-align: center;
+    top:130px;
+  left:150px;
+    bottom:-30%;
+}
+.input{
+   background-color: rgb(176, 240, 230);
+    width: 80%;
+    padding: 10px;
+    margin:auto;
+    border-radius: 20px;
+    border-color: rgb(0, 255, 183);
+}
+.btn{
+    background-color: rgb(161, 17, 205);
+    width: 20%;
+    height:30px;
+    padding:none;
+    margin:20px;
+    border-radius: 20px;
+    border-color:purple; 
+    color:white;  
+}
+#link:hover{
+  color:white;
+}
+</style>
+    </head>
+    <body>
+        <main>
+          <div class="container">
+            <h1>URL Shortener</h1>
+            <form>
+              <input class="input" type="text" id="long-url" name="long-url" placeholder="your long url"><br>
+              <button type="button" id="shorten-btn" class="btn">make_tiny_url</button>
+            </form>
+            <div id="short-url-container" style="display:none">
+              <div id="short-url">
+                <a href="" target="_blank" id="link"></a>
+              </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        </main>
+    </body>
+</html>
+
+
